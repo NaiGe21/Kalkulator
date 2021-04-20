@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class asdasd {
+    public static void main(String[] args) {
+
+
+        int x;
+        int y;
+        char znakdzialania;
+        Scanner wej = new Scanner(System.in);
+        System.out.println("Podaj pierwszą liczbę:");
+        x = wej.nextInt();
+        Scanner wej2 = new Scanner(System.in);
+        System.out.println("Podaj druga liczbę:");
+        y = wej2.nextInt();
+        Scanner wej3 = new Scanner(System.in);
+        System.out.println("Podaj znak dzialania:");
+        znakdzialania = wej3.next().charAt(0);
+
+        if (znakdzialania == '+')
+            System.out.println(x + y);
+        else if (znakdzialania == '-')
+            System.out.println(x - y);
+        else if (znakdzialania == '*')
+            System.out.println(x * y);
+        else if (znakdzialania == '/')
+            if (y != 0)
+                System.out.println(x / y);
+            else System.out.println("nie dziel przez zero !!!");
+        else if (znakdzialania == '%')
+            System.out.println(x % y);
+        else
+            System.out.println("Nieprawidlowy znak dzialania");
+
+    }
+
+}
